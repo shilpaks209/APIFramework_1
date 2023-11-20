@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="31" started-at="2023-11-17T14:26:54Z" finished-at="2023-11-17T14:26:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="31" started-at="2023-11-17T14:26:54Z" finished-at="2023-11-17T14:26:54Z">
+      <class name="assignmentTest.Assignment1_Test">
+        <test-method status="PASS" signature="testMultipleCharacters()[pri:0, instance:assignmentTest.Assignment1_Test@573f2bb1]" name="testMultipleCharacters" duration-ms="0" started-at="2023-11-17T14:26:54Z" finished-at="2023-11-17T14:26:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleCharacters -->
+        <test-method status="PASS" signature="testWithDigitsAndSpecialChars()[pri:0, instance:assignmentTest.Assignment1_Test@573f2bb1]" name="testWithDigitsAndSpecialChars" duration-ms="0" started-at="2023-11-17T14:26:54Z" finished-at="2023-11-17T14:26:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithDigitsAndSpecialChars -->
+        <test-method status="PASS" signature="emptyString()[pri:0, instance:assignmentTest.Assignment1_Test@573f2bb1]" name="emptyString" duration-ms="0" started-at="2023-11-17T14:26:54Z" finished-at="2023-11-17T14:26:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyString -->
+      </class> <!-- assignmentTest.Assignment1_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
