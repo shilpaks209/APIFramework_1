@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31" started-at="2023-11-17T14:26:54Z" finished-at="2023-11-17T14:26:54Z">
+  <suite name="Default suite" duration-ms="28" started-at="2023-12-04T19:23:04Z" finished-at="2023-12-04T19:23:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31" started-at="2023-11-17T14:26:54Z" finished-at="2023-11-17T14:26:54Z">
-      <class name="assignmentTest.Assignment1_Test">
-        <test-method status="PASS" signature="testMultipleCharacters()[pri:0, instance:assignmentTest.Assignment1_Test@573f2bb1]" name="testMultipleCharacters" duration-ms="0" started-at="2023-11-17T14:26:54Z" finished-at="2023-11-17T14:26:54Z">
+    <test name="Default test" duration-ms="28" started-at="2023-12-04T19:23:04Z" finished-at="2023-12-04T19:23:04Z">
+      <class name="testCases.Test2">
+        <test-method status="PASS" signature="testGet()[pri:0, instance:testCases.Test2@c038203]" name="testGet" duration-ms="14" started-at="2023-12-04T19:23:04Z" finished-at="2023-12-04T19:23:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMultipleCharacters -->
-        <test-method status="PASS" signature="testWithDigitsAndSpecialChars()[pri:0, instance:assignmentTest.Assignment1_Test@573f2bb1]" name="testWithDigitsAndSpecialChars" duration-ms="0" started-at="2023-11-17T14:26:54Z" finished-at="2023-11-17T14:26:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithDigitsAndSpecialChars -->
-        <test-method status="PASS" signature="emptyString()[pri:0, instance:assignmentTest.Assignment1_Test@573f2bb1]" name="emptyString" duration-ms="0" started-at="2023-11-17T14:26:54Z" finished-at="2023-11-17T14:26:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyString -->
-      </class> <!-- assignmentTest.Assignment1_Test -->
+        </test-method> <!-- testGet -->
+      </class> <!-- testCases.Test2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

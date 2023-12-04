@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="assignmentTest.Assignment1_Test">
+      <class name="testCases.Test1">
         <methods>
-          <include name="testWithDigitsAndSpecialChars"/>
-          <include name="testMultipleCharacters"/>
+          <include name="testGetSingleUser"/>
         </methods>
-      </class> <!-- assignmentTest.Assignment1_Test -->
+      </class> <!-- testCases.Test1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
