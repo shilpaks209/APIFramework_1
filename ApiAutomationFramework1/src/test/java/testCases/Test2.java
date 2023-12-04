@@ -27,6 +27,8 @@ public class Test2 {
 	public void testGet() {
 		filePathExtractor();
 		String path = ip +"\\api.json";
+		File file = new File(path);
+		
 		System.out.println("Path:" + path);
 		JsonProcessor obj = new JsonProcessor();
 		JSONObject jsonObject = obj.readFromJsonFile(path);
