@@ -14,6 +14,7 @@ import core.JsonProcessor;
 import core.RandomData;
 import io.restassured.response.Response;
 import pojo.ListUsers;
+import requestPojo.RequestPojoPost;
 
 public class Test1 {
 	APIHelper apiHelper = new APIHelper();
@@ -149,7 +150,7 @@ public class Test1 {
 	
 	}
 
-	@Test(enabled = true)
+/*	@Test(enabled = false)
 	public void testPostUsingOrchestrate() {
 
 		/*
@@ -158,22 +159,37 @@ public class Test1 {
 		 * JSONObject(); requestObject.put("name","morpheus");
 		 * requestObject.put("job","leader");
 		 */
-		HashMap<String,String> metaInfo=new HashMap<String,String>();
+	//	HashMap<String,String> metaInfo=new HashMap<String,String>();
 		/*metaInfo.put("name", "shilpa");
 		metaInfo.put("job", "developer");
 		metaInfo.put("age","26");*/
 		//solving data type issue
-		metaInfo.put("name", "shilpa");
+		/*metaInfo.put("name", "shilpa");
 		metaInfo.put("job", "developer");
 		
 		
-		APIRequest apiRequestPost = new APIRequest(
+		/*APIRequest apiRequestPost = new APIRequest(
 				"C:\\Users\\ACER\\git\\ApiFramework\\ApiAutomationFramework1\\src\\main\\resources\\api\\api3.json",metaInfo);
 		Response response = apiHelper.hitAPI(apiRequestPost);
 		System.out.println(response.getStatusCode());
 		Assert.assertEquals(201, response.getStatusCode());
+	}*/
+	@Test(enabled = true)
+	public void testPostUsingOrchestrateionUsingRequestPojo() {
+		RequestPojoPost objReq=new RequestPojoPost();
+		objReq.setName("shilpa");
+		objReq.setJob("leader");
+		HashMap<String,String>Headers=new HashMap<String,String>();
+		System.out.println(objReq);
+		JsonProcessor obj = new JsonProcessor();
+		JSONObject jsonObject = obj.readFromJsonFile(
+				"C:\\Users\\ACER\\git\\ApiFramework\\ApiAutomationFramework1\\src\\main\\resources\\api\\api3.json");
+		System.out.println(jsonObject.get("requestType"));
+		APIRequest apiRequest = new APIRequest(jsonObject.get("requestType").toString(),
+				jsonObject.get("requestApiPath").toString(),Headers,JsonProcessor.stringToJsonObject(objReq.toString()));
+		Response response = apiHelper.hitAPI(apiRequest);
+		System.out.println(response.getStatusCode());
+
 	}
-
-
 }
 

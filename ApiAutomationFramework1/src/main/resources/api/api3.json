@@ -3,6 +3,6 @@
 "requestApiPath":"/api/users",
 "requestBody":{
     "#name": "%s,name",
-    "job": "%d,job"
+    "job": "leader"
 }
 }

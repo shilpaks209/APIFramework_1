@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1714" started-at="2023-12-07T15:23:27Z" finished-at="2023-12-07T15:23:29Z">
+  <suite name="Default suite" duration-ms="2063" started-at="2023-12-11T16:11:01Z" finished-at="2023-12-11T16:11:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1714" started-at="2023-12-07T15:23:27Z" finished-at="2023-12-07T15:23:29Z">
+    <test name="Default test" duration-ms="2063" started-at="2023-12-11T16:11:01Z" finished-at="2023-12-11T16:11:03Z">
       <class name="testCases.Test1">
-        <test-method status="PASS" signature="testPostUsingOrchestrate()[pri:0, instance:testCases.Test1@5b275dab]" name="testPostUsingOrchestrate" duration-ms="1703" started-at="2023-12-07T15:23:27Z" finished-at="2023-12-07T15:23:29Z">
+        <test-method status="PASS" signature="testPostUsingOrchestrateionUsingRequestPojo()[pri:0, instance:testCases.Test1@5b275dab]" name="testPostUsingOrchestrateionUsingRequestPojo" duration-ms="2051" started-at="2023-12-11T16:11:01Z" finished-at="2023-12-11T16:11:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostUsingOrchestrate -->
+        </test-method> <!-- testPostUsingOrchestrateionUsingRequestPojo -->
       </class> <!-- testCases.Test1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

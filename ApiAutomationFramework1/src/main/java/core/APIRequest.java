@@ -77,7 +77,7 @@ public class APIRequest {
 		 
 		 
 	}
-	public APIRequest(String filepath,HashMap<String, String>metaInfo) {
+/*	public APIRequest(String filepath,HashMap<String, String>metaInfo) {
 		 JsonProcessor obj=new JsonProcessor();
 		  JSONObject jsonObject=obj.readFromJsonFile(filepath);
 		  this.requestType=(String) jsonObject.get("requestType");
@@ -93,15 +93,38 @@ public class APIRequest {
 		 }
 	
 
-}
-	public JSONObject orchestrateRequest(JSONObject requestBody2, HashMap<String, String> metaInfo) {
+	
+	/*public JSONObject orchestrateRequest(JSONObject requestBody2, HashMap<String, String> metaInfo) {
 		for(Entry m:metaInfo.entrySet()) {
+			 HashMap<String,Object> reqMap = JSONProcessor.getJsonAsObjectMap(requestBody.toJSONString());
+			   for (Map.Entry<String, Object> it : reqMap.entrySet()) {
+
+			       // Verify Key starts with "#" if yes ,need to orchestrate
+			       if(it.getKey().startsWith("#")){
+			           //get metaInfo map key name by reading Json value
+			           if(it.getValue().toString().contains("%s")){
+			               String metaKey = it.getValue().toString().split(",")[1];
+			               if(this.metaInfo.containsKey(metaKey)) {
+			                   String toBeReplaced = metaInfo.get(metaKey);
+			                   requestBody.put(it.getKey().split("#")[1],toBeReplaced);
+			                   requestBody.remove(it.getKey());
+			               }
+			               //else condition for this key isnot available print error message
+			           }
+			           if(it.getValue().toString().contains("%d")){
+			               String metaKey = it.getValue().toString().split(",")[1];
+			               if(this.metaInfo.containsKey(metaKey)) {
+			                   int toBeReplaced = Integer.parseInt(metaInfo.get(metaKey));
+			                   requestBody.put(it.getKey().split("#")[1],toBeReplaced);
+			                   requestBody.remove(it.getKey());
+			               }*/
+			          // }
+
 			
 			
 			
-			
-			}
+			/*}
 		
 		return requestBody2;
-	}
-	}
+	}*/
+		}
