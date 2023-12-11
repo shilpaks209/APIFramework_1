@@ -35,6 +35,7 @@ public class JsonProcessorTester {
 		 Address address=null;
 		  try {
 			  address = om.readValue(actualJsonString.toString(),Address.class);
+			  System.out.print(address);
 		} catch (JsonMappingException e) {
 			
 			e.printStackTrace();

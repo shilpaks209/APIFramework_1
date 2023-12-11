@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.Test1">
         <methods>
-          <include name="testGetSingleUser"/>
+          <include name="testPostUsingOrchestrate"/>
         </methods>
       </class> <!-- testCases.Test1 -->
     </classes>

@@ -3,6 +3,7 @@ package core;
 import java.util.Locale;
 
 import com.github.javafaker.Faker;
+import com.github.javafaker.PhoneNumber;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
 
@@ -15,13 +16,15 @@ public class RandomData {
 		return email;
 	}
 	
-	/*public String getRandomPhoneNo() {
-		FakeValuesService fakeValueService= new FakeValuesService(new Locale("en-GB"), new RandomService());
-		//regular expression foe phone number
-		//String email = fakeValueService.regexify("+91")
-		//System.out.println(email);
-		//return email;
-	}*/
+	public String getRandomPhoneNo() {
+		
+		 // FakeValuesService fakeValueService = new FakeValuesService(new Locale("en-GB"), new RandomService());
+		Faker faker = new Faker(new Locale("us")); // Use the US locale
+		String phoneNumber = faker.phoneNumber().cellPhone();
+
+        System.out.println(phoneNumber);
+        return phoneNumber;
+	}
 	
 	public String getRandomAddress() {
 		Faker faker=new Faker();

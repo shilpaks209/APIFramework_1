@@ -36,6 +36,7 @@ public class ListUsers {
 		public void setTotal_pages(int total_pages) {
 			this.total_pages = total_pages;
 		}
+		
 		public ArrayList<Datum> getData() {
 			return data;
 		}

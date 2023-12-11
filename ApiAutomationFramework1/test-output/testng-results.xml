@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28" started-at="2023-12-04T19:23:04Z" finished-at="2023-12-04T19:23:04Z">
+  <suite name="Default suite" duration-ms="1714" started-at="2023-12-07T15:23:27Z" finished-at="2023-12-07T15:23:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28" started-at="2023-12-04T19:23:04Z" finished-at="2023-12-04T19:23:04Z">
-      <class name="testCases.Test2">
-        <test-method status="PASS" signature="testGet()[pri:0, instance:testCases.Test2@c038203]" name="testGet" duration-ms="14" started-at="2023-12-04T19:23:04Z" finished-at="2023-12-04T19:23:04Z">
+    <test name="Default test" duration-ms="1714" started-at="2023-12-07T15:23:27Z" finished-at="2023-12-07T15:23:29Z">
+      <class name="testCases.Test1">
+        <test-method status="PASS" signature="testPostUsingOrchestrate()[pri:0, instance:testCases.Test1@5b275dab]" name="testPostUsingOrchestrate" duration-ms="1703" started-at="2023-12-07T15:23:27Z" finished-at="2023-12-07T15:23:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGet -->
-      </class> <!-- testCases.Test2 -->
+        </test-method> <!-- testPostUsingOrchestrate -->
+      </class> <!-- testCases.Test1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
