@@ -2,7 +2,7 @@
 "requestType":"post",
 "requestApiPath":"/api/users",
 "requestBody":{
-    "#name": "%d,name",
+    "#name": "%s,name",
     "job": "%d,job"
 }
 }
