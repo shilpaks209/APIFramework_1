@@ -145,7 +145,9 @@ public class Test1 {
 				jsonObject.get("requestApiPath").toString());
 		Response response = apiHelper.hitAPI(apiRequest);
 		Assert.assertEquals(200, response.getStatusCode());
-		
+		//construct API Request object
+		//APIHelper.hit method is called using object created in step 1
+		//validate response
 		
 	
 	}

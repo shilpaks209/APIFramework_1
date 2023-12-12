@@ -10,13 +10,16 @@ public class APIHelper {
 	public Response hitAPI(APIRequest apiRequest) {
 		RestAssured.baseURI = "https://reqres.in";
 		RequestSpecification request = RestAssured.given();
+		Header header=null;
 		if(apiRequest.getHeaders()!=null) {
-		Header header=new Header("Content-Type",apiRequest.getHeaders().get("Content-Type"));
+		header=new Header("Content-Type",apiRequest.getHeaders().get("Content-Type"));
+	
 		}
 		
 		Response response = null;
 		if (apiRequest.getRequestType().equalsIgnoreCase("get")) {
 		response = request.get(apiRequest.getApiPath());
+		
 
 		}
 
@@ -24,7 +27,9 @@ public class APIHelper {
 			request.body(apiRequest.getRequestBody());
 			 response = request.post(apiRequest.getApiPath());
 			
+			
 		}
+		
 		return response;
 	}
 }

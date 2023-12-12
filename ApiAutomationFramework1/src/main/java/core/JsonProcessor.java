@@ -3,6 +3,7 @@ package core;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -10,6 +11,7 @@ import org.json.simple.parser.ParseException;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 
 
 
@@ -54,7 +56,13 @@ public class JsonProcessor {
 		
 		
 	}
-	
+		public static HashMap<String, Object> getJsonAsObjectMap(String toJSONString) {
+	        HashMap<String,Object> objectMap = new Gson().fromJson(toJSONString, HashMap.class);
+	        return  objectMap;
+	    }
+		
+	}
 
 
-}
+
+
