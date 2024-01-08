@@ -12,8 +12,8 @@ import io.restassured.response.Response;
 
 public class PatchTestCase {
 	APIHelper apiHelper = new APIHelper();
-	//testcase11
-	@Test(enabled = false)
+	
+	@Test(enabled = true)
 	
 	 public void testPartiallyUpdateUserDetails() {
 		

@@ -24,7 +24,7 @@ import pojo.SingleUser;
 public class GetTestCase extends BaseTester {
 	APIHelper apiHelper = new APIHelper();
 	//testcase1
-  @Test(enabled = false)
+  @Test(enabled = true)
 	public void testGetListUsers() {
 		JsonProcessor obj = new JsonProcessor();
 		JSONObject jsonObject = obj.readFromJsonFile(ip+File.separator +"ListUsers.json");
@@ -54,7 +54,7 @@ public class GetTestCase extends BaseTester {
 		}		
 	}
 	//testcase2
-  @Test(enabled = false)
+  @Test(enabled = true)
 	public void testGetSingleUsersNotFound() {
 	
 		JsonProcessor obj = new JsonProcessor();
@@ -100,7 +100,7 @@ public class GetTestCase extends BaseTester {
 		
 	}
 	//testcase4
-  @Test(enabled = false)
+  @Test(enabled = true)
 	public void testGetSingleUser() {
 	
 		JsonProcessor obj = new JsonProcessor();
@@ -131,7 +131,7 @@ public class GetTestCase extends BaseTester {
 			Assert.assertEquals("janet.weaver@reqres.in",(singleUser.data.getEmail()));
 		}}
 	//testcase5
-		 @Test(enabled = false)
+		 @Test(enabled = true)
 			public void testGetSingleResourse() {
 			
 				JsonProcessor obj = new JsonProcessor();
@@ -163,7 +163,7 @@ public class GetTestCase extends BaseTester {
 		}}
 			//testcase6
 		 
-		 @Test(enabled = false)
+		 @Test(enabled = true)
 			public void testGetSingleResourceNotFound() {
 			
 				JsonProcessor obj = new JsonProcessor();

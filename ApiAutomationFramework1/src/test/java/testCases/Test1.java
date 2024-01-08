@@ -61,14 +61,7 @@ public class Test1 {
 	@Test(enabled = false)
 	public void testGetSingleUser() {
 
-		/*
-		 * APIRequest apiRequest=new APIRequest("get","/api/users/2"); Response
-		 * response=apiHelper.hitAPI(apiRequest);
-		 * System.out.println(response.getStatusCode());
-		 * System.out.println(response.getStatusLine());
-		 * System.out.println(response.body());
-		 * System.out.println(response.asPrettyString());
-		 */
+		
 		JsonProcessor obj = new JsonProcessor();
 		JSONObject jsonObject = obj.readFromJsonFile(
 				"C:\\Users\\ACER\\git\\ApiFramework\\ApiAutomationFramework1\\src\\main\\resources\\api\\api.json");

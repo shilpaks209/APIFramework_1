@@ -14,7 +14,7 @@ import io.restassured.response.Response;
 public class DeleteTestCase extends BaseTester{
 	APIHelper apiHelper = new APIHelper();
 	//testcase12
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void testDeleteUser() {
 	
 		JsonProcessor obj = new JsonProcessor();
