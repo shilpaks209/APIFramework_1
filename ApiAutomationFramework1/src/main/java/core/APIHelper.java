@@ -11,12 +11,20 @@ public class APIHelper {
 		RestAssured.baseURI = "https://reqres.in";
 		RequestSpecification request = RestAssured.given();
 		Header header=null;
+		//if (apiRequest.getHeaders()!=null)
+		//iterate hashmap and construct header object
+		//else default header can be set as shown in 20
+		//
+		
+		
 		if(apiRequest.getHeaders()!=null) {
 		header=new Header("Content-Type",apiRequest.getHeaders().get("Content-Type"));
-	
+	    
 		}
 		
+		
 		Response response = null;
+		 request.header(header);
 		if (apiRequest.getRequestType().equalsIgnoreCase("get")) {
 		response = request.get(apiRequest.getApiPath());
 		
@@ -25,8 +33,9 @@ public class APIHelper {
 
 		else if (apiRequest.getRequestType().equalsIgnoreCase("post")) {
 			request.body(apiRequest.getRequestBody());
-			 response = request.post(apiRequest.getApiPath());
 			
+			response = request.post(apiRequest.getApiPath());
+		
 			
 		}
 		

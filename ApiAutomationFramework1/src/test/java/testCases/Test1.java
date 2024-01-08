@@ -152,31 +152,32 @@ public class Test1 {
 	
 	}
 
-/*	@Test(enabled = false)
+	@Test(enabled = true)
 	public void testPostUsingOrchestrate() {
 
 		/*
-		 * HashMap<String,String> headers=new HashMap<String,String>();
-		 * headers.put("Content-Type", "text/plain"); JSONObject requestObject=new
-		 * JSONObject(); requestObject.put("name","morpheus");
-		 * requestObject.put("job","leader");
-		 */
-	//	HashMap<String,String> metaInfo=new HashMap<String,String>();
+		 HashMap<String,String> headers=new HashMap<String,String>();
+		 headers.put("Content-Type", "text/plain"); JSONObject requestObject=new
+		 JSONObject(); requestObject.put("name","morpheus");
+		 requestObject.put("job","leader");*/
+		 
+	HashMap<String,String> metaInfo=new HashMap<String,String>();
 		/*metaInfo.put("name", "shilpa");
 		metaInfo.put("job", "developer");
 		metaInfo.put("age","26");*/
 		//solving data type issue
-		/*metaInfo.put("name", "shilpa");
+		metaInfo.put("name", "shilpa");
 		metaInfo.put("job", "developer");
 		
 		
-		/*APIRequest apiRequestPost = new APIRequest(
+		APIRequest apiRequestPost = new APIRequest(
 				"C:\\Users\\ACER\\git\\ApiFramework\\ApiAutomationFramework1\\src\\main\\resources\\api\\api3.json",metaInfo);
 		Response response = apiHelper.hitAPI(apiRequestPost);
 		System.out.println(response.getStatusCode());
 		Assert.assertEquals(201, response.getStatusCode());
-	}*/
-	@Test(enabled = true)
+	}
+
+	@Test(enabled = false)
 	public void testPostUsingOrchestrateionUsingRequestPojo() {
 		RequestPojoPost objReq=new RequestPojoPost();
 		objReq.setName("shilpa");

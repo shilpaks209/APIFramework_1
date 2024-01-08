@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2063" started-at="2023-12-11T16:11:01Z" finished-at="2023-12-11T16:11:03Z">
+  <suite name="Default suite" duration-ms="65" started-at="2023-12-19T14:32:38Z" finished-at="2023-12-19T14:32:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2063" started-at="2023-12-11T16:11:01Z" finished-at="2023-12-11T16:11:03Z">
+    <test name="Default test" duration-ms="65" started-at="2023-12-19T14:32:38Z" finished-at="2023-12-19T14:32:38Z">
       <class name="testCases.Test1">
-        <test-method status="PASS" signature="testPostUsingOrchestrateionUsingRequestPojo()[pri:0, instance:testCases.Test1@5b275dab]" name="testPostUsingOrchestrateionUsingRequestPojo" duration-ms="2051" started-at="2023-12-11T16:11:01Z" finished-at="2023-12-11T16:11:03Z">
+        <test-method status="FAIL" signature="testPostUsingOrchestrate()[pri:0, instance:testCases.Test1@29774679]" name="testPostUsingOrchestrate" duration-ms="52" started-at="2023-12-19T14:32:38Z" finished-at="2023-12-19T14:32:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at core.APIRequest.orchestrateRequest(APIRequest.java:111)
+	at core.APIRequest.<init>(APIRequest.java:91)
+	at testCases.Test1.testPostUsingOrchestrate(Test1.java:173)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostUsingOrchestrateionUsingRequestPojo -->
+        </test-method> <!-- testPostUsingOrchestrate -->
       </class> <!-- testCases.Test1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
