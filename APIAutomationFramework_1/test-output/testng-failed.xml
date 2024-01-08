@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.PutTestCase">
+      <class name="testcases.GetTestCase">
         <methods>
-          <include name="testUpdateUserDetails"/>
+          <include name="testGetListResourses"/>
+          <include name="filePathExtractor"/>
         </methods>
-      </class> <!-- testcases.PutTestCase -->
+      </class> <!-- testcases.GetTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
