@@ -1,0 +1,10 @@
+{
+"requestType":"post",
+"requestApiPath":"/api/register"
+"requestBody":{
+        "email": "sydney@fife",
+       
+         }
+
+
+}
