@@ -16,12 +16,14 @@ import core.APIRequest;
 import core.JsonProcessor;
 import io.restassured.response.Response;
 import pojo.CreateUser;
+import pojo.ListOfResources;
 import pojo.ListUsers;
 import pojo.SingleResource;
 import pojo.SingleUser;
 
 public class GetTestCase extends BaseTester {
 	APIHelper apiHelper = new APIHelper();
+	//testcase1
   @Test(enabled = false)
 	public void testGetListUsers() {
 		JsonProcessor obj = new JsonProcessor();
@@ -51,6 +53,7 @@ public class GetTestCase extends BaseTester {
 			Assert.assertEquals("lindsay.ferguson@reqres.in",(listUsers.data.get(1).getEmail()));
 		}		
 	}
+	//testcase2
   @Test(enabled = false)
 	public void testGetSingleUsersNotFound() {
 	
@@ -65,8 +68,9 @@ public class GetTestCase extends BaseTester {
 		Assert.assertEquals("{}", response.body().asString());
 	
 	}
+	//testcase3
   
-  @Test(enabled =  false)
+  @Test(enabled =  true)
 	public void testGetListResourses() {
 	
 		JsonProcessor obj = new JsonProcessor();
@@ -76,13 +80,26 @@ public class GetTestCase extends BaseTester {
 				jsonObject.get("requestApiPath").toString());
 		Response response = apiHelper.hitAPI(apiRequest);
 		Assert.assertEquals(200, response.getStatusCode());
+		ListOfResources listOfResources = null;
+		ObjectMapper om = new ObjectMapper();
+		try {
+			listOfResources = om.readValue(response.asString(), ListOfResources.class);
+				
+		} catch (JsonMappingException e) {
+
+			e.printStackTrace();
+		} catch (JsonProcessingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		
-		
-		
+		Assert.assertEquals(1,listOfResources.getPage());
+		Assert.assertEquals(2,listOfResources. getTotal_pages());
+		Assert.assertEquals(12,listOfResources. getTotal());
 		
 		
 	}
+	//testcase4
   @Test(enabled = false)
 	public void testGetSingleUser() {
 	
@@ -113,6 +130,7 @@ public class GetTestCase extends BaseTester {
 				{
 			Assert.assertEquals("janet.weaver@reqres.in",(singleUser.data.getEmail()));
 		}}
+	//testcase5
 		 @Test(enabled = false)
 			public void testGetSingleResourse() {
 			
@@ -143,6 +161,7 @@ public class GetTestCase extends BaseTester {
 			Assert.assertEquals("#C74375",(singleResource.data.getColor()));
 			Assert.assertEquals("#C74375",(singleResource.data.getPantone_value()));
 		}}
+			//testcase6
 		 
 		 @Test(enabled = false)
 			public void testGetSingleResourceNotFound() {

@@ -18,6 +18,7 @@ import pojo.CreateUser;
 
 public class PostTestcase extends BaseTester  {
 	APIHelper apiHelper = new APIHelper();
+	//testcase7
 	 @Test(enabled = false)
 		
 	 public void testCreateUser() {
@@ -47,7 +48,7 @@ public class PostTestcase extends BaseTester  {
 		}
 
 	 
-	 
+		//testcase8 
 	 @Test(enabled = true)
 		
 	 public void RegisterSucessfull1() {
@@ -70,7 +71,7 @@ public class PostTestcase extends BaseTester  {
 	 
 	 
 	 
-	 
+		//testcase9
 	 @Test(enabled = false)
 		public void testRegisterSucessfull2() {
 		 HashMap<String,String> metaInfo=new HashMap<String,String>();
@@ -82,7 +83,7 @@ public class PostTestcase extends BaseTester  {
 			Assert.assertEquals(400, response.getStatusCode());
 			System.out.println(response.asPrettyString());
 	 }
-	 
+		//testcase10
 	 @Test(enabled = false)
 		public void testRegisterUnsucessfull() {
 		 HashMap<String,String>header=new HashMap<String,String>();

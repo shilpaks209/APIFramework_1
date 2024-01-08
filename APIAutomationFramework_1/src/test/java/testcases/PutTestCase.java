@@ -15,7 +15,8 @@ import io.restassured.response.Response;
 
 public class PutTestCase {
 	APIHelper apiHelper = new APIHelper();
-	@Test(enabled = true)
+	//testcase13
+	@Test(enabled = false)
 	
 	 public void testUpdateUserDetails() {
 	HashMap<String, String> headers = new HashMap<String, String>();
@@ -30,17 +31,7 @@ public class PutTestCase {
 
 	 System.out.println(response.asPrettyString());
 
-	/*UpdateUserDetails updateUserDetails = null;
-	ObjectMapper om = new ObjectMapper();
-	try {
-		updateUserDetails = om.readValue(response.asString(), UpdateUserDetails.class);
-	} catch (JsonMappingException e) {
-
-		e.printStackTrace();
-	} catch (JsonProcessingException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}*/
+	
 	
 	
 }

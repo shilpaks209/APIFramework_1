@@ -13,6 +13,7 @@ import io.restassured.response.Response;
 
 public class DeleteTestCase extends BaseTester{
 	APIHelper apiHelper = new APIHelper();
+	//testcase12
 	@Test(enabled = false)
 	public void testDeleteUser() {
 	

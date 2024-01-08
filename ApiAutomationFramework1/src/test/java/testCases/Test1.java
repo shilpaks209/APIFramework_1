@@ -18,7 +18,7 @@ import requestPojo.RequestPojoPost;
 
 public class Test1 {
 	APIHelper apiHelper = new APIHelper();
-
+//testcase1
 	@Test(enabled = false)
 	public void testGet() {
 
@@ -57,7 +57,7 @@ public class Test1 {
 		Assert.assertEquals(201, response.getStatusCode());
 
 	}
-
+	//testcase2
 	@Test(enabled = false)
 	public void testGetSingleUser() {
 
@@ -76,6 +76,7 @@ public class Test1 {
 		System.out.println(jsonObject.get("requestType"));
 
 	}
+	//testcase3
 
 	@Test(enabled = false)
 	public void testPost() {
